@@ -1,132 +1,140 @@
-/* Variables */
-:root {
-    --primary-color: #008080; /* Teal */
-    --secondary-color: #2c3e50;
-    --accent-color: #e74c3c;
+/* --- 1. Reset & Base Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #fcfcfc;
-}
-
-/* Top Bar */
-.top-bar {
-    background-color: #f8f9fa;
-    font-size: 14px;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-}
-
-/* Navbar */
-.navbar-brand {
-    font-weight: 800;
-    font-size: 24px;
-    color: var(--primary-color) !important;
-    text-transform: uppercase;
-}
-
-.nav-link {
-    font-weight: 500;
-    color: #444;
-    margin-right: 10px;
-}
-
-.btn-nav-appointment {
-    background-color: var(--primary-color);
-    color: white !important;
-    border-radius: 8px;
-    padding: 8px 20px;
-    transition: 0.3s;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-nav-appointment:hover {
-    filter: brightness(1.1);
-}
-
-/* Hero Section */
-.hero-section {
-    background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
-                url('https://fachklinik-sylt.de/wp-content/uploads/2022/08/DSC_2497.jpg');
+    background-image: url('background.jpg'); /* Pastikan path fail betul */
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 140px 0;
+    background-attachment: fixed; /* Latar belakang kekal statik semasa skrol */
+    color: #1f2937;
+    line-height: 1.6;
 }
 
-.highlight-text {
-    color: var(--primary-color);
-}
-
-.hero-subtitle {
-    max-width: 700px;
-}
-
-/* Action Cards */
-.action-container {
-    margin-top: -50px; 
-    position: relative; 
-    z-index: 10;
-}
-
-.btn-action-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: none;
-    border-radius: 15px;
-    text-decoration: none;
-    display: block;
-}
-
-.btn-action-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Floating Buttons */
-.floating-whatsapp, .floating-call {
-    position: fixed;
-    bottom: 25px;
-    padding: 15px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    z-index: 2000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    font-weight: bold;
+/* --- 2. Navigation Bar --- */
+.navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    transition: 0.3s;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.floating-whatsapp {
-    right: 25px;
-    background-color: #25d366;
-    color: white;
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+   color: #008080; 
 }
 
-.floating-call {
-    left: 25px;
-    background-color: var(--secondary-color);
-    color: white;
+/* Pautan Navigasi Am */
+.navbar a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
 }
 
-.floating-whatsapp:hover, .floating-call:hover {
-    color: white;
-    filter: brightness(1.1);
+.navbar a:hover,
+.navbar a.active {
+   color: #008080; 
+    font-weight: 600;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    .hero-section {
-        padding: 80px 0;
-    }
-    .floating-whatsapp span, .floating-call span {
-        display: none;
-    }
-    .floating-whatsapp, .floating-call {
-        padding: 15px;
-        border-radius: 50%;
-    }
+/* --- 3. Custom Buttons --- */
+.btn-home {
+    background-color:#008080; 
+    color: #ffffff !important;
+    padding: 12px 60px; /* Ditambah lebar untuk nampak lebih menonjol */
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(29, 78, 216, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-home:hover {
+    background-color: #008080; 
+    transform: translateY(-3px); /* Naik sedikit lebih tinggi */
+    box-shadow: 0 8px 20px rgba(29, 78, 216, 0.4);
+}
+
+/* --- 4. Header Section --- */
+.header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    color: #008080; 
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- 5. Services Table (Card Style) --- */
+.services {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.services table {
+    border-collapse: separate;
+    border-spacing: 25px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Tajuk Kad */
+.services th {
+    background-color: #008080; 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Isi Kad */
+.services td {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 0 0 15px 15px;
+    color: #4b5563;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    vertical-align: top;
+}
+
+/* Kesan Interaktif Kad */
+.services td:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.2);
+}
+
+/* --- 6. Footer --- */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #008080; 
+    color: #f3f4f6;
+    font-size: 0.9rem;
+    margin-top: 50px;
 }
