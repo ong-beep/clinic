@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background-image: url(/background.jpg);
+    background-size: cover;
+    color: #1f2937;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #374151;
+    font-size: 16px;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #1d4ed8;
+    font-weight: 600;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.header h2 {
+    font-size: 36px;
+    color: #1d4ed8;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 17px;
+    color: #4b5563;
+}
+
+/* Services Section */
+.services table {
+    border-collapse: separate;
+    border-spacing: 25px;
+}
+
+/* Tajuk Card */
+.services th {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: white;
+    padding: 18px;
+    border-radius: 14px 14px 0 0;
+    font-size: 18px;
+}
+
+/* Isi Card */
+.services td {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 14px 14px;
+    color: #374151;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.services td:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.25);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d4ed8;
+    color: #e5e7eb;
+    font-size: 14px;
+    margin-top: 40px;
+}
