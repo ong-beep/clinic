@@ -3,187 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klinik At-Taqwa | Rawatan Mesra & Profesional</title>
-    
+    <title>Tentang Kami | Klinik At-Taqwa</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
     <link rel="stylesheet" href="stylesheet.css">
+
+    <style>
+     .about-hero {
+    background: linear-gradient(
+        rgba(0, 64, 128, 0.75),
+        rgba(0, 64, 128, 0.75)
+    ),
+    url('images/clinic-bg.jpg') center/cover no-repeat;
+    padding: 140px 0;
+    position: relative;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    animation: fadeDown 1s ease;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+    opacity: 0.95;
+    animation: fadeUp 1.2s ease;
+}
+
+/* Animation */
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section h2 {
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    display: block;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+section p {
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+section .bi-heart-pulse-fill {
+    background: rgba(220, 53, 69, 0.1);
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.nav-link.active {
+    background-color: #0d6efd;
+    color: #fff !important;
+}
+</style>
+
 </head>
 <body>
+    <li class="nav-item">
+        <a class="nav-link" href="index.html">Utama</a>
+    </li>
+    
+    <li class="nav-item">
+        <a class="nav-link active" href="aboutus.html">Tentang Kami</a>
+    </li>    
+    
+<!-- HERO -->
+<section class="about-hero text-center text-white">
+    <div class="container">
+        <h1 class="fw-bold">Tentang Klinik At-Taqwa</h1>
+        <p class="lead mt-3">
+            Penjagaan kesihatan profesional, mesra pesakit dan berteraskan nilai murni
+        </p>
+    </div>
+</section>
 
-    <div class="top-bar d-none d-lg-block text-secondary">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <span class="me-4"><i class="bi bi-geo-alt-fill text-teal"></i> Melaka, Malaysia</span>
-                    <span class="me-4"><i class="bi bi-clock-fill text-teal"></i> Isnin - Ahad (8am - 10pm)</span>
-                    <a href="tel:+601157040425" class="text-danger fw-bold text-decoration-none">
-                        <i class="bi bi-heart-pulse-fill"></i> Kecemasan: 011-5704 0425
-                    </a>
-                </div>
-                <div class="col-md-4 text-end">
-                    <small>Bahasa: <strong>BM</strong> | EN</small>
-                </div>
+<!-- SIAPA KAMI -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">Siapa Kami</h2>
+                <p class="text-muted">
+                    Klinik At-Taqwa merupakan sebuah klinik komuniti yang komited dalam menyediakan
+                    perkhidmatan kesihatan berkualiti, mesra pesakit dan berpatutan kepada semua lapisan masyarakat.
+                </p>
+                <p class="text-muted">
+                    Kami mengutamakan rawatan menyeluruh dengan pendekatan profesional serta
+                    persekitaran klinik yang selesa dan selamat.
+                </p>
             </div>
+
+            <div class="col-md-6 text-center">
+                <i class="bi bi-heart-pulse-fill text-danger" style="font-size:120px;"></i>
+            </div>
+
         </div>
     </div>
+</section>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="bi bi-plus-circle-fill me-2"></i> KLINIK AT-TAQWA
-            </a>
+<!-- SEJARAH -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center g-4">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">Sejarah Penubuhan</h2>
+                <p class="text-muted">
+                    Klinik At-Taqwa ditubuhkan bagi memenuhi keperluan kesihatan komuniti setempat
+                    dengan menitikberatkan etika perubatan dan nilai kemanusiaan.
+                </p>
+                <p class="text-muted">
+                    Seiring perkembangan masa, klinik ini terus berkembang dengan sokongan
+                    pesakit serta kakitangan yang berdedikasi.
+                </p>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="#">Utama</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Perkhidmatan</a>
-                        <ul class="dropdown-menu border-0 shadow">
-                            <li><a class="dropdown-item" href="#">Rawatan Pesakit Luar</a></li>
-                            <li><a class="dropdown-item" href="#">Check-up Kesihatan</a></li>
-                            <li><a class="dropdown-item" href="#">Vaksinasi</a></li>
-                        </ul>
+            <div class="col-md-6">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        Klinik komuniti berdaftar
                     </li>
-                    <section class="py-5 bg-light" id="panel-kami">
-                        <div class="container">
-                    
-                            <div class="text-center mb-5">
-                                <h2 class="fw-bold">Panel Kami</h2>
-                                <p class="text-muted">
-                                    Kemudahan rawatan melalui panel yang diiktiraf dan dipercayai
-                                </p>
-                            </div>
-                    
-                            <div class="row g-4">
-                    
-                                <!-- PERKESO -->
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="service-card text-center h-100">
-                                        <i class="bi bi-hospital service-icon text-primary"></i>
-                                        <h5 class="fw-bold mt-3">PERKESO</h5>
-                                        <p class="text-muted">
-                                            Rawatan dan pemeriksaan untuk pesakit di bawah perlindungan PERKESO.
-                                        </p>
-                                        <a href="https://wa.me/601157040425?text=Hai,%20saya%20ingin%20bertanya%20mengenai%20panel%20PERKESO"
-                                           class="btn btn-outline-primary btn-sm">
-                                            Maklumat Lanjut
-                                        </a>
-                                    </div>
-                                </div>
-                    
-                                <!-- INSURANS -->
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="service-card text-center h-100">
-                                        <i class="bi bi-shield-check service-icon text-success"></i>
-                                        <h5 class="fw-bold mt-3">Insurans</h5>
-                                        <p class="text-muted">
-                                            Panel untuk pelbagai syarikat insurans dan Third Party Administrator (TPA).
-                                        </p>
-                                        <a href="https://wa.me/601157040425?text=Hai,%20saya%20ingin%20bertanya%20mengenai%20panel%20insurans"
-                                           class="btn btn-outline-success btn-sm">
-                                            Senarai Panel
-                                        </a>
-                                    </div>
-                                </div>
-                    
-                                <!-- SYARIKAT -->
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="service-card text-center h-100">
-                                        <i class="bi bi-building service-icon text-danger"></i>
-                                        <h5 class="fw-bold mt-3">Syarikat</h5>
-                                        <p class="text-muted">
-                                            Panel kesihatan khas untuk pekerja syarikat dan organisasi.
-                                        </p>
-                                        <a href="https://wa.me/601157040425?text=Hai,%20saya%20ingin%20mohon%20panel%20syarikat"
-                                           class="btn btn-outline-danger btn-sm">
-                                            Mohon Panel
-                                        </a>
-                                    </div>
-                                </div>
-                    
-                                <!-- KOMUNITI -->
-                                <div class="col-md-6 col-lg-3">
-                                    <div class="service-card text-center h-100">
-                                        <i class="bi bi-people-fill service-icon text-dark"></i>
-                                        <h5 class="fw-bold mt-3">Komuniti</h5>
-                                        <p class="text-muted">
-                                            Program kesihatan untuk komuniti setempat dan NGO.
-                                        </p>
-                                        <a href="https://wa.me/601157040425?text=Hai,%20saya%20ingin%20bertanya%20program%20kesihatan%20komuniti"
-                                           class="btn btn-outline-dark btn-sm">
-                                            Hubungi Kami
-                                        </a>
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        </div>
-                    </section>
-                    
-                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-                        <a class="btn-nav-appointment text-center" href="https://wa.me/601157040425?text=Hai%20Klinik%20At-Taqwa,%20saya%20ingin%20buat%20temujanji">
-                            <i class="bi bi-calendar-check me-1"></i> Temujanji
-                        </a>
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        Rawatan patuh etika & profesional
+                    </li>
+                    <li class="list-group-item">
+                        <i class="bi bi-check-circle-fill text-success me-2"></i>
+                        Harga berpatutan untuk semua
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
 
-    <header class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold text-dark mb-3 shadow-text">Penjagaan Kesihatan <span class="highlight-text">Terbaik</span> Untuk Keluarga</h1>
-            <p class="lead mb-5 text-dark fw-medium mx-auto hero-subtitle">
-                Di Klinik At-Taqwa, kami mengutamakan keselesaan dan kesihatan anda dengan rawatan yang profesional dan harga yang berpatutan.
-            </p>
-        </div>
-    </header>
-
-    <div class="container action-container">
-        <div class="row g-4 justify-content-center">
-            <div class="col-6 col-md-3">
-                <a href="tel:+601157040425" class="btn btn-light w-100 py-4 shadow-sm btn-action-card text-primary fw-bold text-center">
-                    <i class="bi bi-telephone-fill d-block fs-2 mb-2"></i>
-                    Hubungi Kami
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="https://wa.me/601157040425?text=Hai%20Klinik%20At-Taqwa,%20saya%20ingin%20buat%20temujanji" class="btn btn-light w-100 py-4 shadow-sm btn-action-card text-success fw-bold text-center">
-                    <i class="bi bi-whatsapp d-block fs-2 mb-2"></i>
-                    WhatsApp
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="https://www.google.com/maps/search/?api=1&query=Klinik+Taqwa+Masjid+Tanah" target="_blank" class="btn btn-light w-100 py-4 shadow-sm btn-action-card text-danger fw-bold text-center">
-                    <i class="bi bi-geo-alt-fill d-block fs-2 mb-2"></i>
-                    Lokasi Klinik
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="#" class="btn btn-light w-100 py-4 shadow-sm btn-action-card text-dark fw-bold text-center">
-                    <i class="bi bi-clock-history d-block fs-2 mb-2"></i>
-                    Waktu Operasi
-                </a>
-            </div>
         </div>
     </div>
+</section>
 
-    <a href="https://wa.me/601157040425?text=Hai%20Klinik%20At-Taqwa,%20saya%20memerlukan%20bantuan" class="floating-whatsapp" target="_blank">
-        <i class="bi bi-whatsapp fs-4"></i>
-        <span>WhatsApp Kami</span>
-    </a>
+<!-- VISI & MISI -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4 text-center">
 
-    <a href="tel:+601157040425" class="floating-call">
-        <i class="bi bi-telephone-outbound fs-4"></i>
-        <span>Panggil Klinik</span>
-    </a>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100 p-4">
+                    <i class="bi bi-eye-fill fs-1 text-primary mb-3"></i>
+                    <h4 class="fw-bold">Visi</h4>
+                    <p class="text-muted">
+                        Menjadi klinik pilihan masyarakat dengan perkhidmatan kesihatan
+                        yang dipercayai dan berkualiti.
+                    </p>
+                </div>
+            </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100 p-4">
+                    <i class="bi bi-bullseye fs-1 text-success mb-3"></i>
+                    <h4 class="fw-bold">Misi</h4>
+                    <p class="text-muted">
+                        Memberi rawatan profesional, layanan mesra serta kemudahan
+                        kesihatan yang mudah diakses.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PASUKAN -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Pasukan Kami</h2>
+            <p class="text-muted">Tenaga kerja profesional dan berdedikasi</p>
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <i class="bi bi-person-badge fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Doktor</h5>
+                    <p class="text-muted">Pegawai perubatan bertauliah dan berpengalaman.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <i class="bi bi-clipboard-heart fs-1 text-danger mb-3"></i>
+                    <h5 class="fw-bold">Pembantu Perubatan</h5>
+                    <p class="text-muted">Menyokong rawatan klinikal pesakit.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow-sm p-4 h-100">
+                    <i class="bi bi-people fs-1 text-success mb-3"></i>
+                    <h5 class="fw-bold">Staf Sokongan</h5>
+                    <p class="text-muted">Mengurus pendaftaran dan khidmat pelanggan.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- KEMUDAHAN -->
+<section class="py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Kemudahan Klinik</h2>
+            <p class="text-muted">Persekitaran selesa & peralatan moden</p>
+        </div>
+
+        <div class="row g-4 text-center">
+
+            <div class="col-md-3">
+                <i class="bi bi-heart-pulse fs-1 text-danger mb-3"></i>
+                <h6 class="fw-bold">Bilik Rawatan</h6>
+            </div>
+
+            <div class="col-md-3">
+                <i class="bi bi-droplet-half fs-1 text-primary mb-3"></i>
+                <h6 class="fw-bold">Ujian Makmal</h6>
+            </div>
+
+            <div class="col-md-3">
+                <i class="bi bi-prescription2 fs-1 text-success mb-3"></i>
+                <h6 class="fw-bold">Farmasi</h6>
+            </div>
+
+            <div class="col-md-3">
+                <i class="bi bi-person-wheelchair fs-1 text-warning mb-3"></i>
+                <h6 class="fw-bold">Mesra OKU</h6>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WAKTU & POLISI -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <h4 class="fw-bold mb-3">
+                    <i class="bi bi-clock-fill text-primary me-2"></i>
+                    Waktu Operasi
+                </h4>
+                <p class="text-muted">
+                    Isnin – Ahad: 8.00 pagi – 10.00 malam<br>
+                    Cuti Umum: Dibuka (tertakluk pengumuman)
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h4 class="fw-bold mb-3">
+                    <i class="bi bi-info-circle-fill text-success me-2"></i>
+                    Polisi Klinik
+                </h4>
+                <p class="text-muted">
+                    Temujanji digalakkan • Keutamaan kes kecemasan • Rawatan tertakluk penilaian doktor
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-3">Kesihatan Anda Keutamaan Kami</h3>
+        <p class="mb-4">Hubungi kami untuk pertanyaan atau temujanji</p>
+        <a href="https://wa.me/601157040425" class="btn btn-light fw-bold px-4">
+            <i class="bi bi-whatsapp me-2"></i> WhatsApp Kami
+        </a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
