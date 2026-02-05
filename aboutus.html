@@ -92,7 +92,25 @@ section .bi-heart-pulse-fill {
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-    </style>
+.nav-link {
+    color: #555;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.nav-link.active {
+    background-color: #0d6efd;
+    color: #fff !important;
+}
+</style>
+
 </head>
 <body>
     <li class="nav-item">
@@ -101,7 +119,7 @@ section .bi-heart-pulse-fill {
     
     <li class="nav-item">
         <a class="nav-link active" href="aboutus.html">Tentang Kami</a>
-    </li>
+    </li>    
     
 <!-- HERO -->
 <section class="about-hero text-center text-white">
